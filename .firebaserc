@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fbclone-d810e": {
+      "hosting": {
+        "fbclone": [
+          "fbclone-d810e"
+        ]
+      }
+    }
+  }
+}
