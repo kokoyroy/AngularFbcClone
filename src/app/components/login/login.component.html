@@ -3,6 +3,37 @@
         <img src="../../../assets/Facebook-Logo.svg" alt="Facebook-Logo">
         <h2>facebook helps you connect and share with the people in your life</h2>
     </div>
-    <div class="right"></div>
+    <div class="right">
+        <mat-card class="form-container">
+            <mat-card-content>
+
+                <form #form='ngForm' class="login-form">
+                    <p>
+
+                        <mat-form-field appearance="standard" style="width: 100%;">
+                            <mat-label>email</mat-label>
+                            <input type='text' matInput placeholder="enter email" name="email" ngModel>
+                            <mat-hint>enter your email</mat-hint>
+                        </mat-form-field>
+                    </p>
+                    <p>
+
+                        <mat-form-field appearance="standard" style="width: 100%;">
+                            <mat-label>password</mat-label>
+                            <input type='password' matInput placeholder="enter password" name="password" ngModel>
+                            <mat-hint>enter your password</mat-hint>
+                        </mat-form-field>
+                    </p>
+                    <button type="submit" class="login-btn" [disabled]='form.invalid || form.pending'>login</button>
+                </form>
+                <a href="#">forgotten password</a>
+                <button class="create-account" (click)='createAccount()'>Create new account</button>
+            </mat-card-content>
+        </mat-card>
+        <p class="tagline">create a page for a celebrity band or business</p>
+    </div>
 
 </div>
+<footer>
+    <img src="../../../assets/footer.jpg" alt="footer" style="width: 100%;">
+</footer>

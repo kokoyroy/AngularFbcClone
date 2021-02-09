@@ -6,8 +6,8 @@ import { FbcloneGuard } from './guards/fbclone.guard';
 
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule), canActivate: [FbcloneGuard] },
   { path: 'login', component: LoginComponent },
+  { path: '', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule), canActivate: [FbcloneGuard] }
 ]
 
 

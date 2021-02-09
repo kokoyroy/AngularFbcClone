@@ -14,11 +14,20 @@
     flex-direction: column;
     justify-content: center;
 }
-.right{
-    width: 50%;
-    height: 100%;
-}
 .left img {
     width: 50%;
     min-width: 300px;
 }
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right .form-container{
+    width: 320px;
+}
+
+
